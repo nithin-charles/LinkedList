@@ -121,6 +121,10 @@ public class SinglyLinkedList(Node head)
         if (current != null) current.Next = current?.Next?.Next;
     }
 
+    /// <summary>
+    /// Search for the value
+    /// </summary>
+    /// <param name="value"></param>
     public void Search(int value)
     {
         var current = Head;
@@ -135,6 +139,10 @@ public class SinglyLinkedList(Node head)
         }
     }
 
+    /// <summary>
+    /// Returns the Length of the LinkedList
+    /// </summary>
+    /// <returns></returns>
     public int Length()
     {
         var current = Head;
@@ -147,5 +155,33 @@ public class SinglyLinkedList(Node head)
 
         Console.WriteLine($"Length of the Linked List: {length}");
         return length;
+    }
+
+    /// <summary>
+    /// Reverses the Singly LinkedList
+    /// Time Complexity = O(2N)
+    /// Space complexity = O(1)
+    /// </summary>
+    public void Reverse()
+    {
+        var current = Head;
+        var tail = Head;
+        // Traversal to find the tail -> O(N)
+        var length = 1;
+        while (tail?.Next != null)
+        {
+            tail = tail.Next;
+            length++;
+        }
+        // Traversal to move the nodes -> O(N)
+        for (var i = 1; i < length; i++)
+        {
+            var nextHead = Head?.Next;
+            Head.Next = null;
+            var temp = tail.Next;
+            tail.Next = Head;
+            tail.Next.Next = temp;
+            Head = nextHead;
+        }
     }
 }
