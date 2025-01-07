@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglyLinkedList", "SinglyLinkedList.csproj", "{6115509E-4227-475C-ACAB-9B362359AF13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoublyLinkedList", "DoublyLinkedList\DoublyLinkedList.csproj", "{6FB77837-22AE-4B0E-83A4-5F274B40DF30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{6115509E-4227-475C-ACAB-9B362359AF13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6115509E-4227-475C-ACAB-9B362359AF13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6115509E-4227-475C-ACAB-9B362359AF13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB77837-22AE-4B0E-83A4-5F274B40DF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB77837-22AE-4B0E-83A4-5F274B40DF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB77837-22AE-4B0E-83A4-5F274B40DF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB77837-22AE-4B0E-83A4-5F274B40DF30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
